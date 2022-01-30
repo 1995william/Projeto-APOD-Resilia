@@ -62,8 +62,9 @@ function apod () {
       },
 
       error: function () {
-        titulo.text(`Invalid Date`);
-        img.css("display", "none");
+        titulo.text(`Error in Api. Read the documentation!`);
+        img.attr("src","./img/erro.png");
+        img.css("width", "200px")
         video.css("display", "none");
         descricao.css("display", "none");
         copy.css("display", "none");

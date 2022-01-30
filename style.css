@@ -1,47 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
-@font-face{
-    src: url(font/nasalization-rg.otf) format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'nasa';
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+@font-face {
+  src: url(font/nasalization-rg.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-family: "nasa";
 }
 html {
-    background-color: black;
+  background-color: black;
 }
- #background{
-    position: fixed;
-    width: 100%;
-    height:100%;
-    object-fit: cover;
-    z-index: -10;
-    opacity: 0.5;
+#background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+  opacity: 0.5;
 }
 #cabecalho {
-    padding: 2%;
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    font-family: 'nasa';
+  padding: 2%;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: "nasa";
 }
 .principal {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.500);
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    position:absolute; 
-    left:50%;
-    transform: translateX(-50%);
-    color: white;
-    padding: 3%;
-    font-family: 'Comfortaa', cursive;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 3%;
+  font-family: "Comfortaa", cursive;
 }
 label {
-    font-size: 25px;
+  font-size: 25px;
 }
-label, input, #submit {
-    margin: 1%;
-    padding: 10px;
+label,
+input,
+#submit {
+  margin: 1%;
+  padding: 10px;
 }
 
 input {
@@ -56,15 +58,15 @@ input {
   backface-visibility: hidden;
   background: #09644146;
   border: 0;
-  border-radius: .375rem;
+  border-radius: 0.375rem;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: Circular,Helvetica,sans-serif;
+  font-family: Circular, Helvetica, sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   line-height: 1.3;
   padding: 10px;
   width: 10%;
@@ -72,7 +74,7 @@ input {
   text-align: center;
   text-decoration: none;
   transform: translateZ(0) scale(1);
-  transition: transform .2s;
+  transition: transform 0.2s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -88,7 +90,7 @@ input {
 }
 
 #submit:not(:disabled):hover:active {
-  transform: scale(1.05) translateY(.125rem);
+  transform: scale(1.05) translateY(0.125rem);
 }
 
 #submit:focus {
@@ -96,12 +98,12 @@ input {
 }
 
 #submit:focus:before {
-  border-width: .125rem;
+  border-width: 0.125rem;
   content: "";
-  left: calc(-1*.375rem);
+  left: calc(-1 * 0.375rem);
   pointer-events: none;
   position: absolute;
-  top: calc(-1*.375rem);
+  top: calc(-1 * 0.375rem);
   transition: border-radius;
   user-select: none;
 }
@@ -111,22 +113,22 @@ input {
 }
 
 #submit:not(:disabled):active {
-  transform: translateY(.125rem);
+  transform: translateY(0.125rem);
 }
 #dia {
-    margin: 2%;
+  margin: 2%;
 }
 #titulo-img-video {
-    font-size: 45px;
-    font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
 }
 #descricao {
-    font-size: 18px;
-    line-height: 30px;
+  font-size: 18px;
+  line-height: 30px;
 }
-#img{
-    margin: 2%;
-    width: 700px;
+#img {
+  margin: 2%;
+  width: 700px;
 }
 #video {
   width: 560px;
@@ -135,19 +137,19 @@ input {
 }
 
 #copy {
-    margin: 3%;
-    font-size: 20px;
+  margin: 3%;
+  font-size: 20px;
 }
 footer {
-    background-color: rgba(0, 0, 0, 0.500);
-    width: 100%;
-    margin-top: 160vh;
-    bottom: 0;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    font-family: 'nasa';
-    text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-top: 160vh;
+  bottom: 0;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: "nasa";
+  text-decoration: none;
 }
 footer a {
   text-decoration: none;
