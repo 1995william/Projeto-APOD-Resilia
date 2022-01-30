@@ -10,8 +10,8 @@ html {
 }
  #background{
     position: fixed;
-    width: 100% ;
-    height:100% ;
+    width: 100%;
+    height:100%;
     object-fit: cover;
     z-index: -10;
     opacity: 0.5;
@@ -41,7 +41,16 @@ label {
 }
 label, input, #submit {
     margin: 1%;
-    padding: 5px;
+    padding: 10px;
+}
+
+input {
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  padding-left: 5%;
 }
 #submit {
   backface-visibility: hidden;
@@ -115,23 +124,32 @@ label, input, #submit {
     font-size: 18px;
     line-height: 30px;
 }
-#img , #video {
-    margin: 3%;
+#img{
+    margin: 2%;
     width: 700px;
 }
+#video {
+  width: 560px;
+  height: 315px;
+  padding: 2%;
+}
+
 #copy {
     margin: 3%;
-    font-size: 25px;
+    font-size: 20px;
 }
-#footer {
+footer {
     background-color: rgba(0, 0, 0, 0.500);
-    position: fixed;
-    bottom: 0;
-    padding: 20px 0 20px 0;
-    margin-top: 70%;
     width: 100%;
+    margin-top: 160vh;
+    bottom: 0;
     text-align: center;
     font-size: 20px;
     color: white;
     font-family: 'nasa';
+    text-decoration: none;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
