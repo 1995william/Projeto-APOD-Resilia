@@ -4,9 +4,9 @@
 </h1>
 <br>
 
-<h2 align="center">
+<h3 align="center">
   Astronomy Picture of the Day
-</h2>
+</h3>
 <br>
 <br>
 
