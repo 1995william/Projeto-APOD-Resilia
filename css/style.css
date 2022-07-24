@@ -279,6 +279,7 @@ footer a {
     font-size: 14px;
     max-width: 16rem;
     line-height: 27px;
+    text-align: center;
   }
   #copy {
     margin: 2rem 0;
