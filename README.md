@@ -38,6 +38,6 @@ Para visitar a página clique [aqui](https://1995william.github.io/Projeto-APOD-
 
 [Rodrigo William](https://www.linkedin.com/in/rodrigo-william1/)
 
-## License
+## Licença
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
