@@ -7,55 +7,65 @@
 }
 html {
   background-color: black;
+  width: 100%;
+  height: 100%;
 }
+
 body {
-  height: 100vh;
   display: flex;
+  width: 100vw;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow-x: hidden;
 }
 #background {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
   object-fit: cover;
   z-index: -10;
   opacity: 0.5;
 }
 #cabecalho {
-  padding: 2%;
+  padding: 2rem 0;
+  width: 100vw;
   text-align: center;
   color: white;
   font-size: 50px;
   font-family: "nasa";
+}
+#cabecalho h1 {
+  min-width: 100%;
 }
 .principal {
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  justify-content: center;
+  min-width: 80rem;
   color: white;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
   font-family: "Comfortaa", cursive;
 }
 label {
   font-size: 25px;
 }
 label,
-input,
+#data,
 #submit {
-  margin: 1%;
+  margin: 1rem 0;
 }
 
-input {
-  background: transparent;
+#data {
+  background: #09644146;
   color: white;
   font-size: 18px;
   font-weight: bold;
   border: none;
-  padding-left: 5%;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 #submit {
   backface-visibility: hidden;
@@ -71,8 +81,8 @@ input {
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.3;
-  padding: 10px;
-  width: 10%;
+  padding: 10px 0;
+  min-width: 10rem;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -118,21 +128,26 @@ input {
 #submit:not(:disabled):active {
   transform: translateY(0.125rem);
 }
-#dia {
-  margin: 2%;
-}
+
 #titulo-img-video {
   font-size: 45px;
   font-weight: 700;
+  text-align: center;
+}
+#titulo-img-video,
+#img,
+#descricao {
+  margin: 2rem 0;
+}
+#img {
+  max-width: 700px;
+  max-height: 700px;
 }
 #descricao {
   font-size: 18px;
   line-height: 30px;
-  width: 60%;
-}
-#img {
-  margin: 2%;
-  width: 700px;
+  max-width: 60rem;
+  text-align: justify;
 }
 #video {
   width: 560px;
@@ -141,26 +156,135 @@ input {
 }
 
 #copy {
-  margin: 3%;
+  margin: 3rem 0;
   font-size: 20px;
 }
 footer {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
+  min-width: 100vw;
   height: 3vh;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   font-size: 20px;
   padding: 1rem 0;
   color: white;
   font-family: "nasa";
   text-decoration: none;
 }
-footer p {
-  grid-row: span 2;
-}
 footer a {
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 1300px) {
+  .principal {
+    min-width: 50rem;
+  }
+  #titulo-img-video {
+    font-size: 40px;
+    max-width: 50rem;
+  }
+  #descricao {
+    font-size: 16px;
+    max-width: 45rem;
+  }
+  #copy {
+    font-size: 18px;
+  }
+}
+@media (max-width: 960px) {
+  #cabecalho {
+    font-size: 40px;
+  }
+  #titulo-img-video {
+    font-size: 35px;
+    max-width: 45rem;
+  }
+  .principal {
+    min-width: 45rem;
+  }
+  #img,
+  #video {
+    max-width: 600px;
+    max-height: 600px;
+  }
+  #descricao {
+    font-size: 16px;
+    max-width: 40rem;
+  }
+  #copy {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  #cabecalho {
+    font-size: 35px;
+  }
+  .principal {
+    min-width: 35rem;
+  }
+  label {
+    font-size: 20px;
+  }
+  input {
+    min-width: 8rem;
+  }
+  #titulo-img-video {
+    font-size: 25px;
+    max-width: 30rem;
+  }
+  #img,
+  #video {
+    max-width: 500px;
+    max-height: 500px;
+  }
+  #descricao {
+    font-size: 16px;
+    max-width: 30rem;
+  }
+  #copy {
+    font-size: 18px;
+  }
+}
+@media (max-width: 580px) {
+  #cabecalho {
+    font-size: 22px;
+  }
+  .principal {
+    min-width: 21rem;
+  }
+  label {
+    font-size: 16px;
+  }
+  #data {
+    padding: 6px 4px;
+    max-width: 2rem;
+    font-size: 16px;
+  }
+  #submit {
+    min-width: 8.5rem;
+    padding: 6px;
+  }
+  #titulo-img-video {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 20rem;
+  }
+  #img,
+  #video {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  #descricao {
+    font-size: 14px;
+    max-width: 16rem;
+    line-height: 27px;
+  }
+  #copy {
+    margin: 2rem 0;
+    font-size: 16px;
+  }
+  footer {
+    font-size: 16px;
+  }
 }
