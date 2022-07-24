@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
 @font-face {
-  src: url(font/nasalization-rg.otf) format("opentype");
+  src: url(../font/nasalization-rg.otf) format("opentype");
   font-weight: normal;
   font-style: normal;
   font-family: "nasa";
